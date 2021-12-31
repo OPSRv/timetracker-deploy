@@ -1,8 +1,6 @@
 import os
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-
 DEBUG = False
 
 DATABASES = {
@@ -15,8 +13,3 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
-STATIC_DIR = os.path.join(BASE_DIR, 'static')
-
-STATIC_URL = "/staticfiles/"
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
